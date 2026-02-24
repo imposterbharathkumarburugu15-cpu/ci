@@ -44,7 +44,7 @@ function App() {
     setResult(null);
 
     try {
-      const response = await fetch("https://ci-engine-backend.onrender.com/predict", {
+      const response = await fetch("https://ci-x0u7.onrender.com/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
