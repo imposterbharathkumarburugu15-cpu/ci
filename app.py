@@ -3,7 +3,7 @@ from flask_cors import CORS
 from src.predict import predict_customer
 
 app = Flask(__name__)
-CORS(app)   
+CORS(app, resources={r"/*": {"origins": "https://ci-ml.vercel.app"}})
 
 @app.route("/")
 def home():
