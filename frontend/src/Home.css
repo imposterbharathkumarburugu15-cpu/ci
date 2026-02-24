@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background-color: #0f172a;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 1200px;;
+}
+
+.title {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.form-card,
+.result-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-card h3,
+.result-card h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  color: #cbd5e1;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #334155;
+  color: white;
+  outline: none;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.predict-btn {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.predict-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.result-card p {
+  color: #cbd5e1;
+}
+
+.risk.high {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.risk.medium {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.risk.low {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 280px;
+}
+.predict-btn {
+  margin-bottom: 10px ;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-left: 90%;
+
+}
+.about-btn {
+  margin-bottom: 10px ;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+  margin-left: 90%;
+  max-width: max-content;
+  padding: 15px;
+}
+.header {
+  font-display: auto;
+}
+.m{
+  color: #94a3b8;
+}

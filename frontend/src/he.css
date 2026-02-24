@@ -1,0 +1,129 @@
+/* Header background */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar */
+.navb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  padding: 1rem 2rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  border-bottom: 2px solid rgb(43, 113, 175);
+  transition: all 0.3s ease;
+}
+
+/* Logo section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 50px;
+  height: 60px;
+  transition: transform 0.4s ease;
+}
+
+.logo-container img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+  letter-spacing: 1px;
+  transition: transform 0.4s ease;
+}
+.brand:hover {
+  transform: scale(1.05);
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  transition: all 0.4s ease;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.nav-links li:hover {
+  color: #38bdf8;
+}
+
+/* Button style */
+.btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: white;
+  box-shadow: 0 0 15px #38bdf8;
+  transform: translateY(-2px);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0f172a;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    transform: translateX(100%);
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
