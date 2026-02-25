@@ -146,6 +146,15 @@ body {
   position: sticky;
   top: 0;
   background-color: #0f172a;
+  
   padding: 15px;
+  z-index: 1000;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #0f172a;
+  padding: 20px 40px;
   z-index: 1000;
 }
